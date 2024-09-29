@@ -11,15 +11,17 @@ header {
 #headerlist {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     max-height: 46px;
+    margin: 0px;
 }
 #headerlist > p {
     color: lightgrey;
-    border-left: 2px;
+    /*border-left: 2px;
     border-color: grey;
     border-left-style: solid;
-    height: 100%;
+    height: 100%;*/
 }
 #scLogo {
     display:flex;
@@ -27,18 +29,34 @@ header {
     justify-content: center;
     background-color: #ff6a00;
     width: 170px;
+    max-height: 46px;
 }
 #scLogo > p {
     color: white;
 }
+#scLogo > img {
+    max-height: 40px;
+}
 #seachbar {
     display: flex;
     justify-content: space-between;
-    width: 220px;
+    align-items: center;
+    width: 300px;
     background-color: white;
+    margin-top: 0px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-radius: 20%;
+    max-height: 30px;
 }
 #seachbar > p {
     color: lightgrey;
+    font-size: small;
+    align-items: center;
+    margin: 0px;
+}
+#seachbar > img {
+    max-height: 20px;
 }
 
 /*player window*/
