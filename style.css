@@ -58,6 +58,14 @@ header {
 #seachbar > img {
     max-height: 20px;
 }
+#headerlist > .signIn {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+}
+#headerlist > .accountCreation {
+    background-color: #ff6a00;
+}
 
 /*player window*/
 
@@ -84,10 +92,16 @@ header {
     display: flex;
     flex-direction: row;
 }
+#playinfo > .leftText > button {
+    height: 60px;
+    width: 60px;
+
+}
 #playinfo > .leftText > div > p {
     background-color: #2c2c2c;
     color: white;
     padding: 7px;
+    margin: 5px;
 }
 #songTitle {
     font-size: 30px;
@@ -114,6 +128,7 @@ header {
 #interactionsSection {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -141,17 +156,57 @@ header {
     width: 30px;
     height: 25px;
 }
-
+#upperCommentSection {
+    align-items: center;
+}
+#upperCommentSection > p {
+    width: 600px;
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 20%;
+}
+#comments > div:last-child {
+    justify-content: space-between;
+}
+#commentSectionButtons {
+    display: flex;
+}
+#commentSectionButtons > div {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    max-height: 20px;
+}
+.commentButton {
+    max-height: 18px;
+}
+#comments > div:last-child > div:last-child {
+    display: flex;
+}
+#comments > div:last-child > div:last-child > p {
+    margin: 4px;
+}
 /*artist*/
 
 #artist {
     display: flex;
     flex-direction: row;
 }
+#artist > div {
+    margin: 20px;
+}
 #artist > div > img {
     max-height: 120px;
     max-width: 102px;
     border-radius: 50%;
+}
+#artist > div > .followbutton {
+    background-color: #ff6a00;
+    color: white;
+    text-align: center;
 }
 #followbox {
     background-color: lightgray;
@@ -161,4 +216,72 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+}
+#followbox > div > p:first-child {
+    background-color: white;
+    padding: 2px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 20%;
+    margin: 5px;
+}
+#followbox > div > p:last-child {
+    background-color: #ff6a00;
+    padding: 2px;
+    border-radius: 20%;
+}
+#hashtags {
+    display: flex;
+}
+#hashtags > p {
+    margin: 5px;
+    background-color: grey;
+    border-radius: 20%;
+}
+
+/*playlists*/
+
+#playlists {
+    display: flex;
+    flex-direction: column;
+}
+#playlists > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    padding: 5px;
+    margin: 5px;
+}
+#playlists > div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+#playlists > div > div > p {
+    margin: 0px;
+}
+#playlists > div > div > p:first-child {
+    color: lightgray;
+}
+.albumcover {
+    max-height: 50px;
+}
+
+/*likessection*/
+
+#likes > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+}
+.likeProfilePictures {
+    max-height: 40px;
+    padding-left: -5px;
+    margin-left: -15px;
 }

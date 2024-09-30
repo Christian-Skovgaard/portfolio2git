@@ -21,8 +21,8 @@
                     <p>Search for artists, bands, tracks, podcasts</p>
                     <img src="searchglass.png" alt="searchGlass">
                 </div>
-                <p>Sign in</p>
-                <p>Create account</p>
+                <p class="signIn">Sign in</p>
+                <p class="accountCreation">Create account</p>
                 <p>Upload</p>
                 <p id="more">...</p>
             </ul>
@@ -33,7 +33,7 @@
             <div id="playinfo">
                 <div class="leftText">
                     <button>
-                        <img src="" alt="playbutton">
+                        <img src="play.png" alt="playbutton">
                     </button>
                     <div>
                         <p id="songTitle">Floating letters</p>
@@ -56,23 +56,42 @@
     <section id="interactionsSection">
         <section id="leftSide">
             <section id="comments">
-                <div>
+                <div id="upperCommentSection">
                     <img src="profilepicture.png" alt="profilepicture" class="commentImg">
                     <p>Write a comment</p>
                     <img src="send.png" alt="sendButton" class="commentImg">
                 </div>
                 <div>
-                    <div>
-                        <img src="haert.png" alt="heart" class="commentButton">
-                        <img src="repost.png" alt="repost" class="commentButton">
-                        <img src="share.png" alt="share" class="commentButton">
-                        <img src="copy.png" alt="copy" class="commentButton">
-                        <img src="addToPlaylist.png" alt="addToPlaylist" class="commentButton">
-                        <img src="more.png" alt="more" class="commentButton">
+                    <div id="commentSectionButtons">
+                        <div>
+                            <img src="haert.png" alt="heart" class="commentButton">
+                            <p>like</p>
+                        </div>
+                        <div>
+                            <img src="repost.png" alt="repost" class="commentButton">
+                            <p>Repost</p>
+                        </div>
+                        <div>
+                            <img src="share.png" alt="share" class="commentButton">
+                            <p>Share</p>
+                        </div>
+                        <div>
+                            <img src="copy.png" alt="copy" class="commentButton">
+                            <p>Copy Link</p>
+                        </div>
+                        <div>
+                            <img src="addToPlaylist.png" alt="addToPlaylist" class="commentButton">
+                            <p>Add to Next up</p>
+                        </div>
+                        <div>
+                            <img src="more.png" alt="more" class="commentButton">
+                            <p>More</p>
+                        </div>
+
                     </div>
                     <div>
-                        <p>1,504</p>
-                        <p>7</p>
+                        <p>▶️1,504</p>
+                        <p>❤️7</p>
                     </div>
                 </div>
             </section>
@@ -81,7 +100,7 @@
                     <img src="albumcover.jpg" alt="logo">
                     <p>Tsuumi Sound ...</p>
                     <p>26 4</p>
-                    <p>follow</p>
+                    <p class="followbutton">follow</p>
                     <p>report</p>
                 </div>
                 <div>
@@ -98,8 +117,8 @@
                             <p>comp. Hannu Kella</p>
                             <p>arr. Tsuumi Sound System</p>
                         </div>
-                        <div>
-                            <p>#hannu Kella</p>
+                        <div id="hashtags">
+                            <p>#Hannu Kella</p>
                             <p>#Floating letters</p>
                             <p>#World</p>
                             <p>#Folk</p>
@@ -111,8 +130,51 @@
             </section>
         </section>
         <section id="rightside">
-            <seciton id="playlists"></seciton>
-            <section id="likes"></section>
+            <seciton id="playlists">
+                <div>
+                    <p>in playlist</p>
+                    <p>View all</p>
+                </div>
+                <div>
+                    <img src="albumcover.jpg" alt="playlistcover" class="albumcover">
+                    <div>
+                        <p>Tsuumi Sound System</p>
+                        <p>Tsuumi Sound System</p>
+                        <p>❤️9 🔁1</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="playlistcover.png" alt="playlistcover" class="albumcover">
+                    <div>
+                        <p>FilmbulSounds</p>
+                        <p>RandomlyHappy</p>
+                        <p>❤️4 🔁2</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="playlistcover.png" alt="playlistcover" class="albumcover">
+                    <div>
+                        <p>FilmbulSounds</p>
+                        <p>World (Balkan, Klezmer, Brass...</p>
+                        <p>❤️4</p>
+                    </div>
+                </div>
+            </seciton>
+            <section id="likes">
+                <div>
+                    <p>❤️ 7 likes</p>
+                    <p>View all</p>
+                </div>
+                <div>
+                    <img src="profilepicture.png" alt="profile" class="likeProfilePictures">
+                    <img src="profilepicture.png" alt="profile" class="likeProfilePictures">
+                    <img src="profilepicture.png" alt="profile" class="likeProfilePictures">
+                    <img src="profilepicture.png" alt="profile" class="likeProfilePictures">
+                    <img src="profilepicture.png" alt="profile" class="likeProfilePictures">
+                    <img src="profilepicture.png" alt="profile" class="likeProfilePictures">
+                    <img src="profilepicture.png" alt="profile" class="likeProfilePictures">
+                </div>
+            </section>
             <section id="goMobile"></section>
         </section>
     </section>
